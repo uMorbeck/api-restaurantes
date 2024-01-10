@@ -1,12 +1,12 @@
 import 'dotenv/config'
 import mongoose from 'mongoose';
 
-const connectionURI = process.env.CONNECTION_URI
+const connectionURL = process.env.CONNECTION_URL
 
 class Database {
     constructor() {
         this.connection = mongoose.connect(
-            connectionURI
+            connectionURL
         ).then(() => console.log("Connected to Database"))
     }
 }

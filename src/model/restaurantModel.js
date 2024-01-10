@@ -5,9 +5,11 @@ const restaurantSchema = new mongoose.Schema(
         nome: {
             type: String
         },
+
         endereço: {
             type: String
         },
+        
         horario: {
             type: String
         }
